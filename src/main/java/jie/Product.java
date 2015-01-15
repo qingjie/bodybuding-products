@@ -12,6 +12,7 @@ public class Product {
 	private String brandId;
 	private String brandName;
 	private String brandUrl;
+	private String productUrl;
 	private String description;
 	@JsonProperty("numberSoldInLast30Days")
 	private int quantitySold;
@@ -62,6 +63,21 @@ public class Product {
 
 	public void setBrandUrl(String brandUrl) {
 		this.brandUrl = brandUrl;
+	}
+
+	/**
+	 * @return the productUrl
+	 */
+	public String getProductUrl() {
+		return productUrl;
+	}
+
+	/**
+	 * @param productUrl
+	 *            the productUrl to set
+	 */
+	public void setProductUrl(String productUrl) {
+		this.productUrl = productUrl;
 	}
 
 	public String getDescription() {

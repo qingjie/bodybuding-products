@@ -17,7 +17,11 @@
 		<td>#if ($product.brandId)
 			<a href="http://www.bodybuilding.com/store$product.brandUrl">$!product.brandName</a>
 			#end</td>
-		<td>$!product.name</td>
+		<td>
+		#if ($product.productUrl)
+		<a href="http://www.bodybuilding.com/store$product.productUrl">$!product.name</a>
+		#end
+		</td>
 		<td>$!product.description</td>
 		<td>$!product.quantitySold</td>
 	</tr>
