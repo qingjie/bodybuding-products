@@ -11,6 +11,7 @@
 </thead>
 <tbody>
 #foreach ($product in $products)
+	#if($!product.discontinued)
 	<tr>
 		<td>$velocityCount</td>
 		<td><img width="32" height="32" src="http://store.bbcomcdn.com$product.image"></td>
@@ -25,6 +26,7 @@
 		<td>$!product.description</td>
 		<td>$!product.quantitySold</td>
 	</tr>
+	#end
 #end
 </tbody>
 </table>
